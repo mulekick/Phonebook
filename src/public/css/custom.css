@@ -1,0 +1,92 @@
+/***********VIEW STYLES*************/
+#viewlist {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#viewlist td, #viewlist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#viewlist tr:nth-child(even){background-color: #f2f2f2;}
+
+#viewlist tr:hover {background-color: #ddd;}
+
+#viewlist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+/***********FORM STYLES*************/
+#viewform input[type=text],
+#viewform input[type=number],
+#viewform input[type=tel],
+#viewform input[type=datetime-local],
+#viewform input[type=password],
+#viewform textarea,
+#viewform select {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#viewform div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#viewform div.divfile {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px 20px 10px 20px;
+}
+/***********GENERAL STYLES*************/
+input[type=submit], input[type=button], input[type=file] + label  {
+    /*width: 32%;*/
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 8px 8px;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover, input[type=button]:hover, input[type=file] + label:hover {
+    background-color: #45a049;
+}
+input[type=file] + label {
+    width: 32%;
+    margin: 0px 0;
+}
+input[type=file]:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.btn-large {
+    width: 100%;
+    margin: 8px 0;
+}
+.btn-medium {
+    width: 33%;
+    margin: 8px 0;
+}
+.btn-small {
+    width: 23%;
+    margin: 8px 8px;
+}
+.fileupload {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
